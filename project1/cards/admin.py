@@ -5,8 +5,10 @@ from .models import Cards
 
 class CardsAdmin(admin.ModelAdmin):
     fieldsets = [
-        ('URL Name',         {'fields': ['url_name']}),
+        (None,         {'fields': ['owner']}),
         ('Card Name',        {'fields': ['card_name']}),
+        ('URL Name',         {'fields': ['url_name']}),
+        ('Image',             {'fields': ['image']}),
         ('Media Type',        {'fields': ['media_type']}),
         ('Date information', {'fields': ['pub_date'], 'classes':['collapse']}),
     ]
