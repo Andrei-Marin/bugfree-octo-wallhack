@@ -2,7 +2,7 @@
 
     <ul>
     {% for card in latest_card_list %}
-        <li><a href="{% url 'detail' card.id %}">{{ card.card_text }}</a></li>
+        <li><a href="{% url 'detail' card.id %}">{{ card.card_name }}</a></li>
     {% endfor %}
     </ul>
 {% else %}
